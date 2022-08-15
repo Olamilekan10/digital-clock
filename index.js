@@ -10,6 +10,6 @@ setInterval(() => {
 
     hour.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
     minute.style.transform = `rotateZ(${mm}deg)`;
-    second.style.transform = `rotateZ(${ss}deg)`;
+    // second.style.transform = `rotateZ(${ss}deg)`;
 });
 
