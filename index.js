@@ -18,8 +18,15 @@ setInterval(() => {
     let seconds = document.getElementById("seconds");
     let ampm = document.getElementById('ampm');
 
-    let h = new Date().getHours;
-    let m = new Date().getMinutes;
-    let s = new Date().getSeconds;
+     let h = new Date().getHours();
+     let m = new Date().getMinutes();
+     let s = new Date().getSeconds();
+
+     //adding zero before every single digit
+     
+
+    hours.innerHTML = h;
+    minutes.innerHTML = m;
+    seconds.innerHTML = s;
 });
 
