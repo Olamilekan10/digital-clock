@@ -149,4 +149,16 @@ body{
     width: 60px;
     text-align: center;
     font-weight: 500;
+    color: var(--clr);
+}
+
+#time div:nth-child(1)::after,
+#time div:nth-child(2)::after{
+    content: ':';
+    position: absolute;
+    right: -4px;
+}
+
+#time div:last-child{
+    
 }
