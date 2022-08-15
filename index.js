@@ -1,6 +1,6 @@
-let hour = document.querySelector("#hr");
-let minute = document.querySelector("#mn");
-let second = document.querySelector("#sc");
+let hr = document.querySelector("#hr");
+let mn = document.querySelector("#mn");
+let sc = document.querySelector("#sc");
 
 setInterval(() => {
     let day = new Date();
@@ -8,8 +8,13 @@ setInterval(() => {
     let mm = day.getMinutes() * 6;
     let ss = day.getSeconds() * 6;
 
-    hour.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
-    minute.style.transform = `rotateZ(${mm}deg)`;
-    second.style.transform = `rotateZ(${ss}deg)`;
+    hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+    mn.style.transform = `rotateZ(${mm}deg)`;
+    sc.style.transform = `rotateZ(${ss}deg)`;
+
+    //digital clock
+    let hours = document.querySelector("#hour");
+    let minutes = document.querySelector("#minutes");
+    let seconds = document.querySelector("#seconds");
 });
 
