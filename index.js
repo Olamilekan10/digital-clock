@@ -13,8 +13,13 @@ setInterval(() => {
     sc.style.transform = `rotateZ(${ss}deg)`;
 
     //digital clock
-    let hours = document.querySelector("#hour");
-    let minutes = document.querySelector("#minutes");
-    let seconds = document.querySelector("#seconds");
+    let hours = document.getElementById("hours");
+    let minutes = document.getElementById("minutes");
+    let seconds = document.getElementById("seconds");
+    let ampm = document.getElementById('ampm');
+
+    let h = new Date().getHours;
+    let m = new Date().getMinutes;
+    let s = new Date().getSeconds;
 });
 
