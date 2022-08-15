@@ -23,7 +23,7 @@ setInterval(() => {
      let s = new Date().getSeconds();
 
      //adding zero before every single digit
-     
+     h = (h > 10 ? "0" + h : )
 
     hours.innerHTML = h;
     minutes.innerHTML = m;
