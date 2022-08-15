@@ -22,8 +22,12 @@ setInterval(() => {
      let m = new Date().getMinutes();
      let s = new Date().getSeconds();
 
+     let 
+
      //converting the 24hrs to 12hrs setting
-     
+     if(h > 12){
+         h = h - 12;
+     }
 
      //adding zero before every single digit
      h = (h < 10) ? "0" + h : h
